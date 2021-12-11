@@ -1,0 +1,50 @@
+// ProductsFilter
+.product-filter {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $white;
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        color: $white;
+        transition: 0.5s;
+        display: block;
+        background: $gray-dark;
+        border-radius: 5px;
+        &:hover {
+            color: $gold;
+        }
+    }
+    .active {
+        color: $main;
+        background: $gray;
+        transition: 0.5s;
+        &:hover {
+            color: $main;
+            opacity: 0.9;
+        }
+    }
+}
+
+.filter-group {
+    padding-left: 0;
+    text-align: center;
+    padding: 1rem 0;
+    border: 2px solid $gray-bg;
+    border-radius: 5px;
+    img {
+        width: 32px;
+        height: 32px;
+        margin-right: 1rem;
+        color: $gray-light;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .product-filter {
+        padding: 1rem;
+    }
+}

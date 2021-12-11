@@ -1,0 +1,28 @@
+// Pagination
+.pagination-content {
+    background: $main;
+}
+
+.page-item {
+    font-weight: 600;
+    flex-basis: 2.5rem;
+    text-align: center;
+    line-height: 2rem;
+    .page-link {
+        color: $gray-light;
+        background: $main;
+        border: $main;
+        &:hover {
+            color: $gold;
+        }
+    }
+}
+.page-item.disabled .page-link {
+    background: $main;
+}
+
+.page-item.active .page-link {
+    color: $main;
+    background: $gray;
+    border-color: $gray;
+}

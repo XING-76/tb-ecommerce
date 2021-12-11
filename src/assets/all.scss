@@ -1,0 +1,24 @@
+// bootstrap scss
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/bootstrap";
+
+// Custom scss
+@import "./helpers/variable";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/filter";
+@import "./components/card";
+@import "./components/pagination";
+
+@import "./views/home";
+@import "./views/products";
+@import "./views/product";
+@import "./views/news";
+@import "./views/teams";
+@import "./views/about";
+@import "./views/cart";
+@import "./views/checkout";
+@import "./views/admin";

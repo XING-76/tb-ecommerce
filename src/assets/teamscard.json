@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name" : "臺北富邦勇士",
+    "imgUrl": "https://i.imgur.com/rTQ7iKZ.png",
+    "slogan" : "#憑我相信"
+  },
+  {
+    "id": "2",
+    "name" : "新北國王",
+    "imgUrl": "https://i.imgur.com/Z9s8tbk.png",
+    "slogan" : "#Crown the City 算我一個"
+  },
+  {
+    "id": "3",
+    "name" : "桃園領航猿",
+    "imgUrl": "https://i.imgur.com/2yeGk1g.png",
+    "slogan" : "#RISING 起來"
+  },
+  {
+    "id": "4",
+    "name" : "新竹攻城獅",
+    "imgUrl": "https://i.imgur.com/tmFrzpu.png",
+    "slogan" : "#ReadyToRoar"
+  },
+  {
+    "id": "5",
+    "name" : "台新夢想家",
+    "imgUrl": "https://i.imgur.com/5tQS96B.png",
+    "slogan" : "#夢想不滅 #GoDreamers"
+  },
+  {
+    "id": "6",
+    "name" : "高雄鋼鐵人",
+    "imgUrl": "https://i.imgur.com/Puljokt.png",
+    "slogan" : "#OneSouth #WillOfSteel"
+  }
+]

@@ -1,0 +1,141 @@
+// Teams
+.team-row {
+    width: 90%;
+    margin: auto;
+}
+
+.team-topbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    .team-item {
+        color: $gray-light;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            width: 25px;
+            margin-right: 10px;
+        }
+        span {
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.team-item {
+    a {
+        background: $gray-dark;
+        display: block;
+        border-radius: 5px;
+    }
+    .active {
+        background: $gray;
+        color: $gray-dark;
+    }
+}
+
+.team-tab {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid $gray-bg;
+    padding: 1rem 0;
+}
+
+.team-banner {
+    padding: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.team-slogan {
+    color: $gray-light;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.BRAVES {
+    background: repeating-linear-gradient(
+        45deg,
+        #008fc7,
+        $gray 2px,
+        $gray 2px,
+        #008fc7 4px
+    );
+}
+
+.KINGS {
+    background: repeating-linear-gradient(
+        -55deg,
+        #ffe600,
+        $gray 2px,
+        $gray 2px,
+        #ffe600 4px
+    );
+}
+
+.PILOTS {
+    background: repeating-linear-gradient(
+        -55deg,
+        #ea5504,
+        $gray 2px,
+        $gray 2px,
+        #ea5504 4px
+    );
+}
+
+.LIONEERS {
+    background: repeating-linear-gradient(
+        -55deg,
+        #4f177f,
+        $gray 2px,
+        $gray 2px,
+        #4f177f 4px
+    );
+}
+
+.DREAMERS {
+    background: repeating-linear-gradient(
+        -55deg,
+        #90b540,
+        $gray 2px,
+        $gray 2px,
+        #90b540 4px
+    );
+}
+
+.STEELERS {
+    background: repeating-linear-gradient(
+        -55deg,
+        #b4b4b4,
+        $gray 2px,
+        $gray 2px,
+        #b4b4b4 4px
+    );
+}
+
+.team-info {
+    th {
+        width: 7rem;
+        padding: 0 1.3rem;
+    }
+    td {
+        text-align: left;
+        pre {
+            white-space: pre-line;
+            margin: 1rem 0;
+        }
+    }
+}
+
+/* RWD */
+
+@include media-breakpoint-down(md) {
+    .team-row {
+        width: 95%;
+    }
+}

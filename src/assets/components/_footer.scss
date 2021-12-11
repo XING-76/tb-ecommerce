@@ -1,0 +1,54 @@
+/* Footer */
+
+footer {
+    font-size: 1.3rem;
+    background: $main;
+    color: $white;
+    font-weight: 600;
+    width: 100%;
+}
+
+.footer-left {
+    margin-bottom: 1.5rem;
+    .logo {
+        color: $white;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            height: 3rem;
+        }
+    }
+    pre {
+        color: $gray;
+        margin-top: 1rem;
+        white-space: pre-line;
+    }
+}
+
+.footer-icon {
+    ul {
+        display: flex;
+        font-size: 1.5rem;
+        padding-left: 0;
+        li {
+            margin-right: 1rem;
+            a {
+                display: block;
+                color: $white;
+                transition: 0.5s;
+                &:hover {
+                    color: $gold;
+                }
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    color: $gray;
+    font-size: 1rem;
+    margin-top: 5rem;
+}

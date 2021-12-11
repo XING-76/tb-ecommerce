@@ -1,0 +1,41 @@
+// ProductsCard
+.card-content {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    background: $main;
+    color: $white;
+    .card-box {
+        padding: 1rem;
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.card-img {
+    overflow: hidden;
+    img {
+        width: 100%;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.card-body {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+    &:hover {
+        color: $gold;
+    }
+}
+
+/* RWD */
+
+@include media-breakpoint-down(md) {
+}

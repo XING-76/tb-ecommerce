@@ -1,0 +1,23 @@
+// Products
+.product-content {
+    margin-top: 7rem;
+    color: $white;
+    font-weight: 600;
+}
+
+.filter-title {
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    span {
+        border-bottom: 3px solid $red;
+        font-size: 2rem;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .product-content {
+        flex-direction: column;
+    }
+}

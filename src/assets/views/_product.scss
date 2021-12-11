@@ -1,0 +1,131 @@
+// ProductDetail
+.detail-content {
+    margin-top: 7rem;
+    color: $white;
+    font: 1.3rem;
+    font-weight: 600;
+}
+
+.breadcrumb {
+    display: flex;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    li {
+        &:first-child {
+            margin-right: 0.5rem;
+        }
+        &:last-child::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: $white;
+            content: "/";
+        }
+        a {
+            color: $white;
+            transition: 0.5s;
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+}
+
+section {
+    padding: 2rem;
+}
+
+.product-img {
+    img {
+        width: 100%;
+    }
+}
+
+.product-article {
+    font-weight: 600;
+    padding: 2rem;
+    border-bottom: 2px solid $gray;
+    h2 {
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+    .price-text {
+        font-size: 1.3rem;
+    }
+}
+
+.main-btn {
+    display: flex;
+    justify-content: space-between;
+    .buy-btn {
+        width: 50%;
+        button {
+            font-weight: 600;
+            width: 100%;
+            height: 3rem;
+            background: $gray-dark;
+            color: $white;
+            border: none;
+            transition: 0.5s;
+            &:hover {
+                background: $gold;
+                color: $gray-light;
+            }
+        }
+    }
+}
+
+.product-btn {
+    padding: 2rem;
+    .select-btn {
+        width: 50%;
+        display: flex;
+        margin-right: 1rem;
+        button {
+            background: transparent;
+            border: none;
+            color: $white;
+            transition: 0.5s;
+            width: 4rem;
+            border: 1px solid $gray;
+            &:hover {
+                color: $gold;
+            }
+        }
+        input {
+            width: 100%;
+            height: 3rem;
+            line-height: 3rem;
+            display: block;
+            text-align: center;
+            background: $gray-dark;
+            border: 1px solid $gray;
+            color: $white;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    }
+}
+.size-btn {
+    select {
+        width: 100%;
+        height: 3rem;
+        background: $gray-dark;
+        color: $white;
+        border: 1px solid $gray;
+        padding-left: 1rem;
+        font-weight: 600;
+        display: block;
+        &:focus {
+            border: 1px solid $gray;
+        }
+        option {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// Checkout
+.check-form {
+    margin-bottom: 3rem;
+    .check-table {
+        overflow: auto;
+        color: $white;
+        font-weight: 600;
+        display: block;
+        padding: 0;
+        margin-bottom: 0;
+        width: 90%;
+        margin: auto;
+        tr {
+            height: 3rem;
+            line-height: 3rem;
+            border: none;
+        }
+    }
+    .check-price {
+        width: 90%;
+        margin: auto;
+        padding: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        span:nth-child(1) {
+            flex-grow: 7;
+        }
+        span:nth-child(2) {
+            flex-grow: 1;
+        }
+    }
+    .table {
+        width: 90%;
+        margin: auto;
+    }
+    .table > :not(caption) > * > * {
+        padding: 1.5rem 0.5rem;
+    }
+}
+
+.pay-btn {
+    width: 90%;
+    margin: auto;
+    button {
+        width: 100%;
+        padding: 0.8rem 4rem;
+        background: $gray-dark;
+        color: $white;
+        border: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: 0.5s;
+        &:hover {
+            background: $gold;
+        }
+    }
+}

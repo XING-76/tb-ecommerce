@@ -1,0 +1,102 @@
+// Custom variable
+
+// Font
+
+$font-family-base: "Roboto", "Noto Sans TC", sans-serif;
+
+// Text
+
+// Color
+
+$main: #2a2f35;
+$gray: #7d879c;
+$gray-dark: #373f50;
+$gray-light: #f3f5f9;
+$gray-1: #c5c8cb;
+$gray-bg: #212529;
+$red: #ff211e;
+$gold: #bb986c;
+
+// #2A2F35（灰）（Navbar）（已用）
+// #24282D（深灰）
+// #2A2F34（淺灰）
+// #707070（中灰）（標籤）
+// #24292e（黑）（字）
+// #FF211E（紅）（已用）
+// #E4E5E6（白灰）（贊助商背景色）
+// #c5c8cb（白灰）（標題區塊）（搭配#fff的字）（已用）
+// #f31918（紅）（按鈕）（搭配#fff的hover）
+// #333（黑）（新聞標題字）（搭配#fff的白底）
+// #ececec（淺灰）（用作分隔底線）
+// #969696（中灰）（會員登錄按鈕）（搭配#000的黑字）
+// #A5A5A5（淺灰）（會員輸入框）（搭配#fff的白底）
+// #4d4d4d（稍深灰）（上方訊息條）（搭配#fff的白字）
+// #ff7500（橘）（商品價格）（搭配#000的黑底）
+
+// Breakpoint
+
+// style
+body {
+    background: $gray-bg;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    color: $white;
+    &:hover {
+        color: $gold;
+    }
+}
+
+.btn:focus,
+.btn.Focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button:focus {
+    outline: none !important;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border: none;
+    color: $white;
+}
+
+.text-success {
+    color: $gold !important;
+}
+
+// sweetalert
+.custom-title-class {
+    color: $gray-light;
+}
+
+.custom-text-class {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $gray-light;
+}
+
+// swiper
+.swiper-pagination-bullet {
+    background: $gray-light;
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: $red;
+}
