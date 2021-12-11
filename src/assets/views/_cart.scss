@@ -137,10 +137,10 @@ table {
     tbody {
         box-sizing: border-box;
         tr:nth-of-type(odd) {
-            background-color: $main;
+            background-color: $gray-dark;
         }
         tr:nth-of-type(even) {
-            background-color: $gray-dark;
+            background-color: $main;
         }
     }
 }
