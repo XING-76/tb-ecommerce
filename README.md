@@ -1,6 +1,6 @@
-# <a href="https://xing-76.github.io/tb-ecommerce/#/" target="_blank">TB 電商</a>
+# <a href=https://xing-76.github.io/tb-ecommerce/#/ target=_blank>TB 電商</a>
 
-![default](https://i.imgur.com/wXhAagW.png)
+!default(https://i.imgur.com/wXhAagW.png)
 
 # Demo
 
@@ -23,13 +23,13 @@ https://xing-76.github.io/tb-ecommerce/#/
 -   Vue Router
 -   Vue Component
 -   第三方套件的運用
-    -   [vue-axios]
-    -   [vue-loading-overlay]
-    -   [vue-fontawesome]
-    -   [VeeValidate]
-    -   [sweetalert2]
-    -   [aos]
-    -   [Swiper]
+    -   vue-axios
+    -   vue-loading-overlay
+    -   vue-fontawesome
+    -   VeeValidate
+    -   sweetalert2
+    -   aos
+    -   Swiper
 -   Webpack 概念
 -   API 的應用
 -   Bootstrap 5 + 手刻 SCSS 的混合應用
