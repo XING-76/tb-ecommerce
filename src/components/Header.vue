@@ -47,6 +47,7 @@
       <ul class="text-center mobile-text">
         <li v-for="(nav, key) in navs" :key="key">
           <router-link :to="nav.link" @click.prevent="closeMenu">
+            <font-awesome-icon :icon="nav.icon" />
             {{ nav.name }}
           </router-link>
         </li>
@@ -63,19 +64,23 @@ export default {
       navs: [
         {
           name: '新聞',
-          link: '/news'
+          link: '/news',
+          icon: 'newspaper'
         },
         {
           name: '產品',
-          link: '/products/all'
+          link: '/products/all',
+          icon: 'shopping-bag'
         },
         {
           name: '球隊',
-          link: '/team/1'
+          link: '/team/1',
+          icon: 'basketball-ball'
         },
         {
           name: '關於',
-          link: '/about'
+          link: '/about',
+          icon: 'info-circle'
         }
       ]
     }

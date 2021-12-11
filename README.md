@@ -33,5 +33,4 @@ https://xing-76.github.io/tb-ecommerce/#/
 -   Webpack 概念
 -   API 的應用
 -   Bootstrap 5 + 手刻 SCSS 的混合應用
--   使用 ESLint + Prettier
-# tb-ecommerce
+-   使用 ESlint 提升程式碼可讀性、品質（專案使用 Standard JS 規範）

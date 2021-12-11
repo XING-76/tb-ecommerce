@@ -164,6 +164,12 @@ header {
     }
 }
 
+.mobile-link {
+    svg {
+        margin-right: 5px;
+    }
+}
+
 /* RWD */
 
 @include media-breakpoint-down(md) {
