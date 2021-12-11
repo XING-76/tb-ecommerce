@@ -1,6 +1,6 @@
 # <a href=https://xing-76.github.io/tb-ecommerce/#/ target=_blank>TB 電商</a>
 
-!default(https://i.imgur.com/wXhAagW.png)
+![default](https://i.imgur.com/wXhAagW.png)
 
 # Demo
 
