@@ -1,11 +1,11 @@
 // Checkout
 .check-form {
     margin-bottom: 3rem;
+    overflow: auto;
     .check-table {
         overflow: auto;
         color: $white;
         font-weight: 600;
-        display: block;
         padding: 0;
         margin-bottom: 0;
         width: 90%;
@@ -52,6 +52,16 @@
         transition: 0.5s;
         &:hover {
             background: $gold;
+        }
+    }
+}
+
+/* RWD */
+
+@include media-breakpoint-down(md) {
+    .check-form {
+        .check-table {
+            display: block;
         }
     }
 }

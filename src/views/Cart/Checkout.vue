@@ -5,11 +5,11 @@
     <!-- 進度條 end -->
     <!-- 完成訂單 -->
     <div class="row justify-content-center">
-      <form class="col-md-8 check-form" @submit.prevent="payOrder">
+      <form class="check-form" @submit.prevent="payOrder">
         <table class="check-table align-middle">
-          <thead>
-            <th class="text-center">產品圖</th>
-            <th class="text-center">品名</th>
+          <thead class="text-center">
+            <th>產品圖</th>
+            <th>品名</th>
             <th>數量</th>
             <th>單價</th>
           </thead>
@@ -18,7 +18,7 @@
               <td><img :src="item.product.imageUrl" alt="" /></td>
               <td>{{ item.product.title }}</td>
               <td>{{ item.qty }} {{ item.product.unit }}</td>
-              <td class="text-center">{{ item.final_total }}</td>
+              <td class="text-center">{{ $filters.currency(item.final_total) }}</td>
             </tr>
           </tbody>
         </table>
