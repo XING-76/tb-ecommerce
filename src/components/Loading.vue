@@ -68,7 +68,7 @@ export default {
   }
 }
 
-$ball-colour: #ff8c16;
+$ball-colour: #ff7500;
 $ball-size: 60px;
 $ball-background: radial-gradient(
   circle at #{$ball-size - ($ball-size / 2.5)} #{$ball-size - (

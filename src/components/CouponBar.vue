@@ -12,7 +12,8 @@ $gray: #7d879c;
 $gray-dark: #373f50;
 $gray-light: #f3f5f9;
 $gold: #bb986c;
-$white: rgba(255, 255, 255, 0);
+$white: #ffffff;
+$whiteRGBA: rgba(255, 255, 255, 0);
 
 .coupon-bar {
   width: 90%;
@@ -30,12 +31,12 @@ $white: rgba(255, 255, 255, 0);
     text-transform: uppercase;
     letter-spacing: 4px;
     overflow: hidden;
-    background: linear-gradient(90deg, $main, $gold, $main);
+    background: linear-gradient(90deg, $main, $white, $main);
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 8s linear infinite;
     background-clip: text;
-    -webkit-text-fill-color: $white;
+    -webkit-text-fill-color: $whiteRGBA;
   }
 }
 
