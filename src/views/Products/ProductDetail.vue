@@ -54,6 +54,25 @@
         </div>
       </div>
     </div>
+    <!-- Random Products -->
+    <div class="filter-title mb-4"><span>推薦產品</span></div>
+    <swiper
+        class="px-4 random-swiper"
+        :slidesPerView="1"
+        :spaceBetween="30"
+        :loop="true"
+        :breakpoints="swiper.breakpoints"
+      >
+        <swiper-slide v-for="item in randomProducts" :key="item.id">
+          <div class="shadow-sm recommend-item">
+            <router-link
+              :to="`/product/${item.id}`"
+            >
+              <img :src="item.imageUrl" :alt="item.title">
+            </router-link>
+          </div>
+        </swiper-slide>
+      </swiper>
   </div>
 </template>
 
@@ -61,6 +80,7 @@
 export default {
   data () {
     return {
+      products: [],
       product: {},
       id: '',
       qty: 1,
@@ -71,19 +91,74 @@ export default {
         { size: 'XL' },
         { size: '2L' }
       ],
+      randomProducts: [],
+      swiper: {
+        thumbsSwiper: null,
+        thumbsStyle: {
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff'
+        },
+        breakpoints: {
+          428: {
+            slidesPerView: 2
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: 4
+          }
+        }
+      },
       isLoading: false
     }
   },
   emits: ['update-qty'],
+  computed: {
+    productId () {
+      // 假設 URL 為 /product/1， $route.params.productId 的值就是 1
+      return this.$route.params.productId
+    }
+  },
+  watch: {
+    productId (id) {
+      this.getProduct(id)
+    }
+  },
   methods: {
-    getProduct () {
-      const api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/product/${this.id}`
+    getProducts () {
+      const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/products/all`
+      this.$http.get(url).then((response) => {
+        this.products = response.data.products
+        this.getRandomProducts()
+      })
+    },
+    getProduct (id) {
+      const api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/product/${id}`
       this.isLoading = true
       this.$http.get(api).then((response) => {
         this.isLoading = false
         if (response.data.success) {
           this.product = response.data.product
         }
+      })
+    },
+    getRandomProducts () {
+      this.randomProducts = []
+      const arrSet = new Set([]) // 不能塞入重複內容
+      const productAll = [...this.products]
+      productAll.forEach((item, index) => {
+        if (item.id === this.product.id) {
+          productAll.splice(index, 1)
+        }
+      })
+      for (let i = 0; arrSet.size < 8; i + 1) {
+        const num = Math.floor(Math.random() * productAll.length)
+        arrSet.add(num)
+        // arrSet, num 測試用
+      }
+      arrSet.forEach((i) => {
+        this.randomProducts.push(productAll[i])
       })
     },
     qtyHandler (click) {
@@ -109,7 +184,8 @@ export default {
   },
   created () {
     this.id = this.$route.params.productId
-    this.getProduct()
+    this.getProducts()
+    this.getProduct(this.id)
   }
 }
 </script>

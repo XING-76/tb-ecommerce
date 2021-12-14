@@ -129,3 +129,14 @@ section {
         }
     }
 }
+
+.recommend-item {
+    overflow: hidden;
+    img {
+        width: 100%;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
