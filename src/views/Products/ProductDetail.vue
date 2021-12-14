@@ -1,7 +1,7 @@
 <template>
   <CustomLoading :active="isLoading" />
   <div class="container mb-5 detail-content">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <nav>
           <ul class="breadcrumb">
