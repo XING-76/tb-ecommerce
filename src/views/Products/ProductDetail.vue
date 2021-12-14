@@ -140,6 +140,7 @@ export default {
         this.isLoading = false
         if (response.data.success) {
           this.product = response.data.product
+          this.getProducts()
         }
       })
     },
@@ -184,7 +185,6 @@ export default {
   },
   created () {
     this.id = this.$route.params.productId
-    this.getProducts()
     this.getProduct(this.id)
   }
 }
