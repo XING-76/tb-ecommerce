@@ -43,6 +43,7 @@ $gray-light: #f3f5f9;
 $gold: #bb986c;
 
 .icon {
+  z-index: 100;
   cursor: pointer;
   position: fixed;
   bottom: 20px;
