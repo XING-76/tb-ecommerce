@@ -123,6 +123,9 @@ export default {
   watch: {
     productId (id) {
       this.getProduct(id)
+    },
+    qty (q) {
+      this.validQty(q)
     }
   },
   methods: {
@@ -164,6 +167,20 @@ export default {
     },
     qtyHandler (click) {
       this.qty = this.qty + click
+    },
+    validQty (qty) {
+      if (qty > 10 || qty < 1) {
+        this.$swal.fire({
+          toast: false,
+          icon: 'warning',
+          position: 'center',
+          title: '商品數量限制',
+          html: "<span class='custom-text-class'>一次購物數量僅限於1至10個<span>",
+          timer: 2500
+        }).then(() => {
+          this.qty = 1
+        })
+      }
     },
     addToCart (id, qty = 1) {
       const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/cart`
