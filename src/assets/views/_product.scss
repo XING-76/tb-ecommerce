@@ -92,14 +92,13 @@ section {
             }
         }
         input {
-            border-radius: none;
             width: 100%;
             height: 3rem;
             line-height: 3rem;
             display: block;
             text-align: center;
             background: $gray-dark;
-            border: 1px solid $gray;
+            border: 1px solid $gray-dark;
             color: $white;
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
