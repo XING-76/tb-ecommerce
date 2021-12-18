@@ -75,11 +75,10 @@ section {
 }
 
 .product-btn {
-    padding: 2rem;
+    padding: 2rem 1rem;
     .select-btn {
         width: 50%;
         display: flex;
-        margin-right: 1rem;
         button {
             background: transparent;
             border: none;
@@ -97,7 +96,7 @@ section {
             line-height: 3rem;
             display: block;
             text-align: center;
-            background: $gray-bg;
+            background: $gray-dark;
             border: 1px solid $gray;
             color: $white;
             &::-webkit-outer-spin-button,
