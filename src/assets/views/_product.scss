@@ -97,9 +97,8 @@ section {
             line-height: 3rem;
             display: block;
             text-align: center;
-            background: $gray-dark;
-            // border: 1px solid $gray;
-            border-style: none;
+            background: $gray-bg;
+            border: 1px solid $gray;
             color: $white;
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
