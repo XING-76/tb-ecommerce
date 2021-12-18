@@ -10,7 +10,7 @@
       </div>
 
       <!-- Router-link -->
-      <div class="col-lg-8 header-link">
+      <div class="col-lg-8 col-md-8 header-link">
         <ul class="text-center d-flex">
           <li v-for="(nav, key) in navs" :key="key">
             <router-link :to="nav.link" @click.prevent="closeMenu">

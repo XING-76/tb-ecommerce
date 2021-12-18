@@ -35,7 +35,6 @@ header {
     padding-left: 0;
     li {
         width: 3rem;
-
         margin: 0 3rem;
         a {
             display: block;
@@ -55,7 +54,6 @@ header {
     justify-content: center;
     li {
         width: 3rem;
-
         a {
             display: block;
             position: relative;
@@ -172,6 +170,14 @@ header {
 
 /* RWD */
 
+@include media-breakpoint-down(lg) {
+    .header-link ul {
+        li {
+            margin: 0 2rem;
+        }
+    }
+}
+
 @include media-breakpoint-down(md) {
     .header-nav {
         justify-content: space-between;
@@ -179,7 +185,7 @@ header {
             display: none;
         }
         .header-icon {
-            margin-left: 20rem;
+            margin-left: 16rem;
         }
     }
 
