@@ -98,7 +98,8 @@ section {
             display: block;
             text-align: center;
             background: $gray-dark;
-            border: 1px solid $gray;
+            // border: 1px solid $gray;
+            border-style: none;
             color: $white;
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
