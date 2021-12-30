@@ -44,14 +44,7 @@
                     >
                       <font-awesome-icon icon="minus" />
                     </button>
-                    <input
-                      type="number"
-                      min="1"
-                      max="10"
-                      @input="updateCart(item)"
-                      :value="item.qty"
-                      autocomplete="off"
-                    />
+                    <span>{{ item.qty }}</span>
                     <button
                       :disabled="item.qty >= 10"
                       @click="addToCart(item, 1), item.qty++"
@@ -235,17 +228,6 @@ export default {
         qty
       }
       this.$http.post(url, { data: cart }).then(() => {
-        this.getCart()
-        this.$swal.fire({ icon: 'success', title: '已更新訂單' })
-      })
-    },
-    updateCart (item) {
-      const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/cart/${item.id}`
-      const cart = {
-        product_id: item.product_id,
-        qty: item.qty
-      }
-      this.$http.put(url, { data: cart }).then(() => {
         this.getCart()
         this.$swal.fire({ icon: 'success', title: '已更新訂單' })
       })

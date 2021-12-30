@@ -86,7 +86,7 @@
             color: $gold;
         }
     }
-    input {
+    span {
         width: 100%;
         height: 3rem;
         line-height: 3rem;
@@ -95,14 +95,6 @@
         background: $gray-dark;
         border: 1px solid $gray;
         color: $white;
-        &::-webkit-outer-spin-button,
-        &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-    }
-    input[type="number"] {
-        -moz-appearance: textfield;
     }
 }
 
